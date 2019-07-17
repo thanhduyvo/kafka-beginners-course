@@ -22,3 +22,12 @@ This is a project using Apache Kafka with Java 8 on Windows.
 #### Start Zookeeper in one command line: ```zookeeper-server-start.bat config\zookeeper.properties```
 
 #### Start Kafka in another command line: ```kafka-server-start.bat config\server.properties```
+
+## Kafka Commands
+
+#### Consumer Groups
+
+```kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --topic first_topic```
+- Option ```--execute``` to start consuming on topic ```first_topic``` with group ```my-first-application```
+- Option ```--reset-offsets --shift-by -2``` to reset offsets in partition by 2
+- Option ```--describe``` to see topic ```first_topic``` summary
