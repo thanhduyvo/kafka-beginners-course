@@ -7,11 +7,11 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Properties;
 
-public class ProducerDemoWithCallback {
+public class ProducerDemoKeys {
 
     public static void main(String[] args) {
 
-        final Logger logger = LoggerFactory.getLogger(ProducerDemoWithCallback.class);
+        final Logger logger = LoggerFactory.getLogger(ProducerDemoKeys.class);
 
         String bootstrapServers = "127.0.0.1:9092";
 
@@ -25,8 +25,15 @@ public class ProducerDemoWithCallback {
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
 
         for (int i = 0; i < 10; i++) {
+
+            String topic = "first_topic";
+            String value = "Hello world " + i;
+            String key = "id_" + i;
+
             // create a producer record
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>("first_topic", "Hello world " + i);
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>(topic, key, value);
+
+            logger.info("Key: " + key); // log the key
 
             // send data asynchronous
             producer.send(record, new Callback() {
