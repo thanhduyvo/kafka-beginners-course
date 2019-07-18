@@ -1,4 +1,4 @@
-# Kafka for Beginners
+# Kafka in Practice
 This is a project using Apache Kafka with Java 8 on Windows.
 
 ## Get started guide (Windows)
@@ -25,9 +25,13 @@ This is a project using Apache Kafka with Java 8 on Windows.
 
 ## Kafka Commands
 
-#### Consumer Groups
+#### Create new topic
 
-```kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --topic first_topic```
-- Option ```--execute``` to start consuming on topic ```first_topic``` with group ```my-first-application```
+```kafka-topics --zookeeper 127.0.0.1:2181 --create --topic twitter_tweets --partitions 6 --replication-factor 1```
+
+#### Consume on group
+
+```kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --topic twitter_tweets```
+- Option ```--execute``` to start consuming on topic ```twitter_tweets``` with group ```my-first-application```
 - Option ```--reset-offsets --shift-by -2``` to reset offsets in partition by 2
-- Option ```--describe``` to see topic ```first_topic``` summary
+- Option ```--describe``` to see topic ```twitter_tweets``` summary
