@@ -29,6 +29,10 @@ This is a project using Apache Kafka with Java 8 on Windows.
 
 ```kafka-topics --zookeeper 127.0.0.1:2181 --create --topic twitter_tweets --partitions 6 --replication-factor 1```
 
+#### Consume on topic
+
+```kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic twitter_tweets --from-beginning```
+
 #### Consume on group
 
 ```kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --topic twitter_tweets```
