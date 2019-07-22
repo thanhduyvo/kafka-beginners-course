@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.simplesteph</groupId>
-    <artifactId>kafka-beginners-course</artifactId>
+    <artifactId>kafka-in-practice</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
     <build>

@@ -24,7 +24,7 @@ public class StreamsFilterTweets {
         StreamsBuilder streamsBuilder = new StreamsBuilder();
 
         // input topic
-        KStream<String, String> inputTopic = streamsBuilder.stream("twitter_topics");
+        KStream<String, String> inputTopic = streamsBuilder.stream("twitter_tweets");
         KStream<String, String> filteredStream = inputTopic.filter(
                 // filter for tweets which has a user of over 10000 followers
                 (k, jsonTweet) -> extractUserFollowersInTweet(jsonTweet) > 10000
