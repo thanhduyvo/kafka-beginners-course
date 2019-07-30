@@ -13,7 +13,7 @@ This is a project using Apache Kafka with Java 8 on Windows.
 
 #### Try Kafka commands using ```kafka-topics.bat``` (for example)
 
-#### Edit Zookeeper & Kafka configs using NotePad++ ```https://notepad-plus-plus.org/download/```
+#### Edit Zookeeper & Kafka configs
 
 - zookeeper.properties: ```dataDir=C:/kafka_2.12-2.0.0/data/zookeeper``` (yes the slashes are inverted)
 
@@ -27,11 +27,15 @@ This is a project using Apache Kafka with Java 8 on Windows.
 
 #### Create new topic
 
-```kafka-topics --zookeeper 127.0.0.1:2181 --create --topic twitter_tweets --partitions 6 --replication-factor 1```
+```kafka-topics --create --zookeeper 127.0.0.1:2181 --replication-factor 1 --partitions 2 --topic <topic_name>```
+
+#### Produce on topic
+
+```kafka-console-producer.bat --broker-list 127.0.0.1:9092 --topic <topic_name>```
 
 #### Consume on topic
 
-```kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic twitter_tweets --from-beginning```
+```kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic <topic_name> --from-beginning```
 
 #### Consume on group
 
