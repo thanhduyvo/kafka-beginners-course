@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5a20228-ba4d-46cd-b6a7-c26e86855aac" name="Default Changelist" comment="Update artifactId">
-      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="e5a20228-ba4d-46cd-b6a7-c26e86855aac" name="Default Changelist" comment="Update kafka streams starter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-streams-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-streams-starter/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,24 +71,39 @@
         <option value="$PROJECT_DIR$/kafka-producer-twitter/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-streams-filter-tweets/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-streams-starter/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/kafka-streams-starter/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kafka/streams/StreamsStarterApp.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java" />
+        <option value="$PROJECT_DIR$/kafka-streams-starter/pom.xml" />
       </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kafka-streams-starter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kafka-streams-starter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kafka-streams-starter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1934" />
-    <option name="height" value="1050" />
+    <option name="width" value="974" />
+    <option name="height" value="1250" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -109,31 +120,6 @@
             <path>
               <item name="kafka-in-practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka-in-practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-in-practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafka-in-practice" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-streams-starter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-in-practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafka-in-practice" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-streams-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-in-practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafka-in-practice" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-streams-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka-in-practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafka-in-practice" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-streams-starter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,11 +293,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563830470661</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update kafka streams starter">
+      <created>1564439062546</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564439062546</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1186" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -322,8 +315,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.33048433" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.325736" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39981008" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -335,7 +328,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.19829424" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.19829424" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -373,7 +366,28 @@
     <MESSAGE value="Update source code" />
     <MESSAGE value="Add Kafka Streams filtering tweets" />
     <MESSAGE value="Update artifactId" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update artifactId" />
+    <MESSAGE value="Update kafka streams starter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update kafka streams starter" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java</url>
+          <line>38</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/simplesteph/kafka/tutorial1/ConsumerDemo.java" />
@@ -554,17 +568,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/2.3.0/kafka-streams-2.3.0.jar!/org/apache/kafka/streams/kstream/KeyValueMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kafka-streams-starter/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="555">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="459">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
