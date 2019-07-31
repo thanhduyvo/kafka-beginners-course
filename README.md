@@ -36,6 +36,11 @@ This is a project using Apache Kafka with Java 8 on Windows.
 #### Consume on topic
 
 ```kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic <topic_name> --from-beginning```
+- Option ```--formatter kafka.tools.DefaultMessageFormatter```
+- Option ```--property print.key=true```
+- Option ```--property print.value=true```
+- Option ```--property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer```
+- Option ```--property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer```
 
 #### Consume on group
 
