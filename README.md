@@ -44,7 +44,7 @@ This is a project using Apache Kafka with Java 8 on Windows.
 
 #### Consume on group
 
-```kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --topic twitter_tweets```
-- Option ```--execute``` to start consuming on topic ```twitter_tweets``` with group ```my-first-application```
+```kafka-consumer-groups --bootstrap-server 127.0.0.1:9092 --group <group_name> --topic <topic_name>```
+- Option ```--execute``` to start consuming on topic ```<topic_name>``` with group ```<group_name>```
 - Option ```--reset-offsets --shift-by -2``` to reset offsets in partition by 2
-- Option ```--describe``` to see topic ```twitter_tweets``` summary
+- Option ```--describe``` to see topic ```<topic_name>``` summary
