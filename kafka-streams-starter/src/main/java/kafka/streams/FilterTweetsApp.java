@@ -1,4 +1,4 @@
-package kafka.tutorial4;
+package kafka.streams;
 
 import com.google.gson.JsonParser;
 import org.apache.kafka.common.serialization.Serdes;
@@ -9,7 +9,7 @@ import org.apache.kafka.streams.kstream.KStream;
 
 import java.util.Properties;
 
-public class StreamsFilterTweets {
+public class FilterTweetsApp {
 
     public static void main(String[] args) {
 
