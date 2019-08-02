@@ -5,6 +5,7 @@ import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
+import org.apache.kafka.streams.Topology;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KTable;
 import org.apache.kafka.streams.kstream.Materialized;
@@ -15,16 +16,7 @@ import java.util.Properties;
 
 public class WordCountApp {
 
-    public static void main(String[] args) {
-
-        // create properties
-        Properties properties = new Properties();
-        properties.setProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
-        properties.setProperty(StreamsConfig.APPLICATION_ID_CONFIG, "wordcount-application");
-        properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-        properties.setProperty(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.StringSerde.class.getName());
-        properties.setProperty(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.StringSerde.class.getName());
-
+    public Topology createTopology() {
         // create a topology
         StreamsBuilder streamsBuilder = new StreamsBuilder();
 
@@ -45,16 +37,37 @@ public class WordCountApp {
         // 7 - to in order to write the results back to kafka
         wordCounts.toStream().to("word-count-output", Produced.with(Serdes.String(), Serdes.Long()));
 
+        return streamsBuilder.build();
+    }
+
+    public static void main(String[] args) {
+
+        // create properties
+        Properties properties = new Properties();
+        properties.setProperty(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
+        properties.setProperty(StreamsConfig.APPLICATION_ID_CONFIG, "wordcount-application");
+        properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        properties.setProperty(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.StringSerde.class.getName());
+        properties.setProperty(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.StringSerde.class.getName());
+
+        WordCountApp wordCountApp = new WordCountApp();
+
         // build the topology
-        KafkaStreams kafkaStreams = new KafkaStreams(streamsBuilder.build(), properties);
+        KafkaStreams kafkaStreams = new KafkaStreams(wordCountApp.createTopology(), properties);
 
         // start our streams application
         kafkaStreams.start();
 
-        // print the topology
-        System.out.println(streamsBuilder.toString());
-
         // shutdown hook to correctly close the streams application
         Runtime.getRuntime().addShutdownHook(new Thread(kafkaStreams::close));
+
+        while (true) {
+            kafkaStreams.localThreadsMetadata().forEach(data -> System.out.println(data));
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                break;
+            }
+        }
     }
 }

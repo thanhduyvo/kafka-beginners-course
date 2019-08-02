@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5a20228-ba4d-46cd-b6a7-c26e86855aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/BankBalanceExactlyOnceApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/BankTransactionsProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/UserDataProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/UserEventEnricherApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/test/java/kafka/streams/WordCountAppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/kafka-basics.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-consumer-elasticsearch/kafka-consumer-elasticsearch.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-producer-twitter/kafka-producer-twitter.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-streams-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-streams-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,15 +24,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>latch.</find>
-      <find>1151886128548589568</find>
-      <find>follo</find>
-      <find>followers_count</find>
-      <find>process</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,20 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BankTransactionsProducer">
-    <configuration name="BankBalanceExactlyOnceApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kafka.streams.BankBalanceExactlyOnceApp" />
-      <module name="kafka-streams-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kafka.streams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.WordCountAppTest.makeSureCountsAreCorrect">
     <configuration name="BankTransactionsProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kafka.streams.BankTransactionsProducer" />
       <module name="kafka-streams-starter" />
@@ -104,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FavouriteColourApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kafka.streams.FavouriteColourApp" />
+    <configuration name="UserDataProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka.streams.UserDataProducer" />
       <module name="kafka-streams-starter" />
       <extension name="coverage">
         <pattern>
@@ -117,21 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwitterProducer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kafka.tutorial2.TwitterProducer" />
-      <module name="kafka-producer-twitter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kafka.tutorial2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCountApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kafka.streams.WordCountApp" />
+    <configuration name="UserEventEnricherApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka.streams.UserEventEnricherApp" />
       <module name="kafka-streams-starter" />
       <extension name="coverage">
         <pattern>
@@ -139,17 +102,48 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCountAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka-streams-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kafka.streams" />
+      <option name="MAIN_CLASS_NAME" value="kafka.streams.WordCountAppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCountAppTest.makeSureCountsAreCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka-streams-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kafka.streams" />
+      <option name="MAIN_CLASS_NAME" value="kafka.streams.WordCountAppTest" />
+      <option name="METHOD_NAME" value="makeSureCountsAreCorrect" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WordCountAppTest.makeSureCountsAreCorrect" />
+        <item itemvalue="JUnit.WordCountAppTest" />
+        <item itemvalue="Application.UserDataProducer" />
+        <item itemvalue="Application.UserEventEnricherApp" />
         <item itemvalue="Application.BankTransactionsProducer" />
-        <item itemvalue="Application.BankBalanceExactlyOnceApp" />
-        <item itemvalue="Application.FavouriteColourApp" />
-        <item itemvalue="Application.WordCountApp" />
-        <item itemvalue="Application.TwitterProducer (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564605937874</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update Bank Balance App">
+      <created>1564765634280</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564765634280</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,26 +263,8 @@
     <MESSAGE value="Update kafka streams starter" />
     <MESSAGE value="Add FavouriteColourApp" />
     <MESSAGE value="Restructure modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructure modules" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java</url>
-          <line>38</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Update Bank Balance App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Bank Balance App" />
   </component>
   <component name="masterDetails">
     <states>
