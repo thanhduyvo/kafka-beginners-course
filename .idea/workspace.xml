@@ -2,18 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5a20228-ba4d-46cd-b6a7-c26e86855aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/UserDataProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/UserEventEnricherApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-streams-starter/src/test/java/kafka/streams/WordCountAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/bin/debug.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/config/MySinkConnector.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/config/MySourceConnector.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/config/connect-avro-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/kafka-connectors-github.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/assembly/package.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySinkConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySinkConnectorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySinkTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySourceConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySourceConnectorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySourceTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/DocumentationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySinkConnectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySinkTaskIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySinkTaskTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySourceConnectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySourceTaskIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySourceTaskTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-streams-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-streams-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-streams-starter/src/main/java/kafka/streams/WordCountApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -28,11 +53,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1Oq43UWiB0snF915Oa979W2aoTP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/kafka-basics/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/kafka-producer-twitter/src/main/java" />
@@ -242,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564765634280</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add WordCount testing">
+      <created>1564780803439</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1564780803439</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,13 +286,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update source code" />
     <MESSAGE value="Add Kafka Streams filtering tweets" />
     <MESSAGE value="Update artifactId" />
@@ -264,7 +303,8 @@
     <MESSAGE value="Add FavouriteColourApp" />
     <MESSAGE value="Restructure modules" />
     <MESSAGE value="Update Bank Balance App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Bank Balance App" />
+    <MESSAGE value="Add WordCount testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add WordCount testing" />
   </component>
   <component name="masterDetails">
     <states>

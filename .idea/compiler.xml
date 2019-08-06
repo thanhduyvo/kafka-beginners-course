@@ -11,6 +11,13 @@
         <module name="kafka-basics" />
         <module name="kafka-consumer-elasticsearch" />
       </profile>
+      <profile name="Annotation profile for kafka-in-practice" enabled="true">
+        <sourceOutputDir name="kafka-connectors-github/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="kafka-connectors-github/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kafka-connectors-github" />
+        <module name="kafka-in-practice" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="kafka-streams-filter-tweets" target="8" />
