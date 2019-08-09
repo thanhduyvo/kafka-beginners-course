@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="kafka-producer-twitter" />
+        <module name="kafka-connectors-github" />
         <module name="kafka-streams-starter" />
         <module name="kafka-basics" />
         <module name="kafka-consumer-elasticsearch" />
@@ -15,7 +16,6 @@
         <sourceOutputDir name="kafka-connectors-github/target/generated-sources/annotations" />
         <sourceTestOutputDir name="kafka-connectors-github/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="kafka-connectors-github" />
         <module name="kafka-in-practice" />
       </profile>
     </annotationProcessing>

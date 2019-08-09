@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5a20228-ba4d-46cd-b6a7-c26e86855aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/bin/debug.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/config/MySinkConnector.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/config/MySourceConnector.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/config/connect-avro-docker.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/kafka-connectors-github.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/assembly/package.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySinkConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySinkConnectorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySinkTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySourceConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySourceConnectorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/main/java/com/github/simplesteph/MySourceTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/DocumentationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySinkConnectorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySinkTaskIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySinkTaskTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySourceConnectorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySourceTaskIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/java/com/github/simplesteph/MySourceTaskTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-connectors-github/src/test/resources/logback.xml" afterDir="false" />
+    <list default="true" id="e5a20228-ba4d-46cd-b6a7-c26e86855aac" name="Default Changelist" comment="Init kafka connectors github module">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-connectors-github/kafka-connectors-github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-connectors-github/kafka-connectors-github.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,6 +29,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -278,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564780803439</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Init kafka connectors github module">
+      <created>1565125121742</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565125121742</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,7 +295,8 @@
     <MESSAGE value="Restructure modules" />
     <MESSAGE value="Update Bank Balance App" />
     <MESSAGE value="Add WordCount testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add WordCount testing" />
+    <MESSAGE value="Init kafka connectors github module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init kafka connectors github module" />
   </component>
   <component name="masterDetails">
     <states>

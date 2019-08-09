@@ -25,7 +25,7 @@
         <module>kafka-producer-twitter</module>
         <module>kafka-consumer-elasticsearch</module>
         <module>kafka-streams-starter</module>
-        <module>kafka-in-practice</module>
+        <module>kafka-connectors-github</module>
     </modules>
 
 </project>
